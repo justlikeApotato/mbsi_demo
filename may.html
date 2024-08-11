@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAY 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .tabs button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #333;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("content");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>MAY 2025</h1>
+
+    <div class="tabs">
+        <button onclick="openTab('nobel')">Nobel Prize Winners</button>
+        <button onclick="openTab('discoveries')">Discoveries</button>
+        <button onclick="openTab('exams')">Examination Schedule</button>
+    </div>
+
+    <div id="nobel" class="content active">
+        <h2>Nobel Prize Winners</h2>
+              
+        <ul>
+            <li>BARUJ BENACERRAF  (1980)</li>
+            <li>JEAN DAUSSET (1980)</li>
+            <li>GEORGE D. SNELL (1980)</li>
+            <li>HAROLD VARMUS (1989)</li>
+            <li>J. MICHAEL BISHOP (1989)</li>
+            <li>PHILLIP A. SHARP(1993)</li>
+            <li>RICHARD J. ROBERTS(1993)</li>
+            <li>CRAIG C. MELLO(2006)</li>
+            <li>ANDREW Z. FIRE(2006)</li>
+        </ul>
+    </div>
+
+    <div id="discoveries" class="content">
+        <h2>Discoveries</h2>
+        <br>
+        <h3>Monoclonal Antibodies</h3>
+        <p>César Milstein and Georges Köhler'sdiscovery of monoclonal antibodytechnology, which they published in May1975, transformed diagnostics andtherapeutics and resulted in thedevelopment of cures for infectious,autoimmune, and cancerous disorders.</p>
+        <h3>ARTIFICIAL CHLOROPLASTS</h3>
+        <p>On May 8, 2020 scientists claim to have created artificial chloroplasts,
+            which are internal photosynthetic organelles found in plant cells. Thylakoids,
+            which are employed in photosynthesis, were paired with a bacterial enzyme
+            and an artificial metabolic module consisting of sixteen enzymes to form cellsized
+            droplets that can convert carbon dioxide more effectively than plants
+            alone.</p>
+        <h3>ARTIFICIAL RED BLOOD CELLS</h3>
+        <p>On May 11 2020, researchers havegenerated the first artificial red bloodcells that possess all of the widelyaccepted broad natural properties andcapacities of natural cells. Furthermore,methods for loading functional cargoslike ATP biosensors, drugs, magneticnanoparticles, and hemoglobin mayenable further non-native capabilities.</p>
+    </div>
+
+    <div id="exams" class="content">
+        <h2>Examination Schedule</h2>
+        <img src="exam.png">
+    </div>
+
+</body>
+</html>
